@@ -1,0 +1,87 @@
+$Menucolor: #282c3f;
+
+.left-side {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  .card {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 10px;
+  }
+}
+.card-img {
+  width: 100px;
+}
+.card-img img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+#card-one .text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.d-flex {
+  justify-content: space-between;
+}
+
+.btn-pin button {
+  width: 130px;
+  background-color: white;
+  color: lightcoral;
+}
+.btn-pin button {
+  border: 1px solid lightcoral;
+}
+.cardfooter {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  .itemsave {
+    button {
+      width: 100%;
+      background-color: lightcoral;
+      color: white;
+      border: none;
+      text-align: center;
+      font-weight: 900;
+      font-size: 12px;
+    }
+  }
+  .itemReomve {
+    button {
+      width: 100%;
+      background-color: $Menucolor;
+      color: white;
+      border: none;
+      text-align: center;
+      font-weight: 900;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+}
+.right-side {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+
+  .card {
+    padding: 20px;
+  }
+}
+.Ordplace-btn {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.563);
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: lightcoral;
+  color: white;
+}

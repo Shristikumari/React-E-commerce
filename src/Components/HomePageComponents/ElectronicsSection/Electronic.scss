@@ -1,0 +1,26 @@
+.conatiner-fluid {
+  .electronicSection {
+    display: flex;
+    flex-wrap: wrap;
+    .electonics {
+      .img-sec {
+        img {
+          width: 15vw;
+          height: 20vh;
+          object-fit: fill;
+          margin: 10px;
+        }
+      }
+      .text-sec {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .text-sec {
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

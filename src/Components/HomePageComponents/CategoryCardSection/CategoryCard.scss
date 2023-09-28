@@ -1,0 +1,36 @@
+.container-fluid {
+  .category_card_sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+
+    .section-container {
+      width: 90%;
+      margin: 10px;
+      height: 20%;
+      position: relative;
+      img {
+        width: 20vw;
+        height: 30vh;
+        object-fit: fill;
+        margin-top: 20px;
+      }
+      .text-container {
+        width: 20vw;
+        height: 18vh;
+        position: absolute;
+        top: 136px;
+        border-radius: 5%;
+        text-align: center !important;
+        background-color: rgba(203, 73, 37, 0.86);
+        color: white;
+        font-size: calc(1rem + 0.2vw);
+        font-weight: 900;
+        padding: 10px;
+      }
+      .text-container h6 {
+        font-size: calc(1rem + 0.2vw);
+      }
+    }
+  }
+}

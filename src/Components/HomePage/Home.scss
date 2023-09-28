@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+$boxshadow: 4px 4px rgb(246, 246, 246);
+$whiteColor: white;
+$Menucolor: #282c3f;
+$bgcolor: rgb(245, 245, 246);
+$lightcoral: lightcoral;
+$fontfamily: "Assistant", sans-serif !important;
+
+.container-fluid {
+  .banner {
+    // width: 100%;
+    // height: 10%;
+    img {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      object-fit: fill;
+      margin-top: 30px;
+    }
+    @mixin section($height: 20%) {
+      width: 100%;
+      height: 20%;
+    }
+    .slider-banner {
+      @include section(20%);
+    }
+    .Electronics_section {
+      @include section(20%);
+    }
+    .collection_section {
+      @include section(20%);
+    }
+    .category_section {
+      @include section(auto);
+    }
+  }
+  @mixin header {
+    color: #282c3f !important;
+    font-weight: 400 !important;
+    word-spacing: 5px !important;
+    letter-spacing: 2px;
+    font-style: oblique;
+    font-size: calc(1.5rem + 0.2vw);
+  }
+
+  .heading-deals {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    h1 {
+      @include header;
+    }
+    h2 {
+      @include header;
+    }
+  }
+}

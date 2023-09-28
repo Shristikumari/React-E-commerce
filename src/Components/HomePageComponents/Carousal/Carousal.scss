@@ -1,0 +1,33 @@
+@import url("slick-carousel/slick/slick.css");
+@import url("slick-carousel/slick/slick-theme.css");
+$fontfamily: "Assistant", sans-serif !important;
+$Menucolor: #282c3f;
+
+.container-fluid {
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    .slick-prev,
+    .slick-next {
+      position: relative !important;
+    }
+    .silder-main {
+      width: 100%;
+      height: 20%;
+      .slider-side {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        .img {
+          img {
+            width: 15vw;
+            height: 20vh;
+            object-fit: fill;
+          }
+        }
+      }
+    }
+  }
+}

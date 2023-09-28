@@ -1,0 +1,26 @@
+.conatiner-fluid {
+  .BrandSection {
+    display: flex;
+    flex-wrap: wrap;
+    .brand {
+      .brand_img {
+        img {
+          width: 15vw;
+          height: 20vh;
+          object-fit: fill;
+          margin: 10px;
+        }
+      }
+      .text-part {
+        // position: absolute;
+        // top: 75%;
+        margin-left: 10px;
+        text-align: center;
+        background-color: rgba(178, 143, 143, 0.323);
+        span {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

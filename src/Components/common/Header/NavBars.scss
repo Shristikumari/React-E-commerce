@@ -1,0 +1,115 @@
+$boxshadow: 4px 4px rgb(246, 246, 246);
+$whiteColor: white;
+$Menucolor: #282c3f;
+$bgcolor: rgb(245, 245, 246);
+$lightcoral: lightcoral;
+$fontfamily: "Assistant", sans-serif !important;
+
+body {
+  font-family: "Assistant", sans-serif !important;
+  background-color: #eee;
+}
+* {
+  font-family: "Assistant", sans-serif !important;
+}
+//mixin start for all
+@mixin heading($font: calc(0.9rem + 0.5vw)) {
+  font-family: $fontfamily !important;
+  font-weight: 900;
+  font-size: $font;
+}
+@mixin paragraph {
+  font-family: $fontfamily !important;
+  font-size: 1rem;
+  font-weight: 700;
+}
+@mixin span {
+  font-family: $fontfamily !important;
+  font-size: calc(0.7rem + 0.3vw);
+  font-weight: 700;
+  text-align: center;
+}
+h1 {
+  @include heading(calc(0.9rem + 0.5vw));
+}
+h2 {
+  @include heading(calc(0.8rem + 0.4vw));
+}
+h3 {
+  @include heading(calc(0.7rem + 0.3vw));
+}
+p {
+  @include paragraph;
+}
+span {
+  @include span;
+}
+a {
+  text-decoration: none !important;
+  color: $Menucolor !important;
+  font-family: $fontfamily !important;
+}
+//mixin end
+.navbar {
+  background-color: $whiteColor !important;
+  box-shadow: $boxshadow;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  .nav-link {
+    color: #282c3f !important;
+    font-weight: 700 !important;
+    font-family: $fontfamily;
+    margin-left: 20px;
+    a {
+      text-decoration: none !important;
+      color: #282c3f !important;
+    }
+  }
+  .dropdown-menu {
+    width: 30vw;
+    height: auto;
+  }
+  .dropdown-item {
+    white-space: normal !important;
+    font-size: 1rem;
+    display: flex;
+    text-decoration: none !important;
+    font-family: $fontfamily;
+  }
+  .d-flex {
+    width: 40%;
+    border-radius: 2%;
+    padding: 8px;
+    margin-left: 10px;
+    background-color: $bgcolor;
+    border: none !important;
+  }
+  .css-v4u5dn-MuiInputBase-root-MuiInput-root:before {
+    content: none !important;
+  }
+  .dropdown-toggle::after {
+    content: none !important;
+  }
+}
+
+h1 {
+  color: $Menucolor;
+}
+span {
+  color: $Menucolor;
+}
+.logindwopdown {
+  .dropdown-menu {
+    width: 12vw;
+  }
+}
+.log_out {
+  button {
+    border: none;
+    background-color: $lightcoral;
+    margin: 10px;
+    color: $whiteColor;
+    padding: 10px;
+  }
+}

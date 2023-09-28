@@ -1,0 +1,22 @@
+#ThankyouCard {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.BackBtn {
+  border: 1px solid lightcoral;
+  color: black;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+}
+.BackBtn:hover {
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid lightcoral;
+}
